@@ -11,7 +11,6 @@ import java.util.Random;
 import pkg2048.Main;
 import pkg2048.gameobject.GameObject;
 import pkg2048.graphics.Renderer;
-import pkg2048.graphics.Sprite;
 
 import pkg2048.input.Keyboard;
 
