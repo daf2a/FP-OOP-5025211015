@@ -25,36 +25,36 @@ public class GameObject {
     public GameObject(double x, double y){
         this.x = x;
         this.y = y;
-        this.value = (rand.nextBoolean() ? 1 : 2);
+        this.value = (rand.nextBoolean() ? 3 : 6);
         createSprite();
         this.width = sprite.width;
         this.height = sprite.height;
     }
 
     public void createSprite() {
-        if(this.value == 1){
+        if(this.value == 3){
             this.sprite = new Sprite (100, 100, 0x8091af);
-        } else if(this.value == 2){
+        } else if(this.value == 6){
             this.sprite = new Sprite (100, 100, 0x4869ab);
-        } else if(this.value == 4){
+        } else if(this.value == 9){
             this.sprite = new Sprite (100, 100, 0x1788ac);
-        } else if(this.value == 8){
+        } else if(this.value == 27){
             this.sprite = new Sprite (100, 100, 0x2d6ae2);
-        } else if(this.value == 16){
+        } else if(this.value == 81){
             this.sprite = new Sprite (100, 100, 0x0dd044);
-        } else if(this.value == 32){
+        } else if(this.value == 243){
             this.sprite = new Sprite (100, 100, 0xf365ee);
-        } else if(this.value == 64){
+        } else if(this.value == 729){
             this.sprite = new Sprite (100, 100, 0xf3189b);
-        } else if(this.value == 128){
+        } else if(this.value == 2187){
             this.sprite = new Sprite (100, 100, 0xfca642);
-        } else if(this.value == 256){
+        } else if(this.value == 6561){
             this.sprite = new Sprite (100, 100, 0x162331);
-        } else if(this.value == 512){
+        } else if(this.value == 19683){
             this.sprite = new Sprite (100, 100, 0xeeff28);
-        } else if(this.value == 1024){
+        } else if(this.value == 59049){
             this.sprite = new Sprite (100, 100, 0x20202d);
-        } else if(this.value == 2048){
+        } else if(this.value == 177147){
             this.sprite = new Sprite (100, 100, 0x000000);
         }
     }

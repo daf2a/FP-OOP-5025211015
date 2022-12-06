@@ -60,7 +60,7 @@ public class Game {
                 if(i == j) continue;
                 if(objects.get(i).x == objects.get(j).x && objects.get(i).y == objects.get(j).y && !objects.get(i).remove && !objects.get(j).remove){
                     objects.get(j).remove = true;
-                    objects.get(i).value *= 2;
+                    objects.get(i).value *= 3;
                     objects.get(i).createSprite();
                 }
             }
