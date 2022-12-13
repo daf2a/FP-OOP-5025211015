@@ -13,8 +13,9 @@ Saya berencana membuat game 2D menggunakan bahasa java. Tipe game yang ingin say
  
 Final Result 🔽
 
- 
-<img width="313" alt="screen" src="https://user-images.githubusercontent.com/114115721/207231453-933aa7bf-ebd7-437e-b1f3-6083e575c9dd.png">
+
+ ![Group 1458](https://user-images.githubusercontent.com/114115721/207251495-3c7fbc44-fd86-49dd-9d69-f4019b356d8d.png)
+
 
 ⛳ Gameplay : Pemain menggeser blok ke arah ⬅️➡️⬆️⬇️ menggunakan key WASD atau Panah
 
