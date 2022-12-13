@@ -13,6 +13,9 @@ Saya berencana membuat game 2D menggunakan bahasa java. Tipe game yang ingin say
  
 Final Result 🔽
 
+<img width="1453" alt="A4 - 1" src="https://user-images.githubusercontent.com/114115721/207319225-80ca5e56-30cf-4be0-9634-cc7afdfe38ef.png">
+
+Main Screen & Game Screen 🔽
 
  ![Group 1458](https://user-images.githubusercontent.com/114115721/207251495-3c7fbc44-fd86-49dd-9d69-f4019b356d8d.png)
 
