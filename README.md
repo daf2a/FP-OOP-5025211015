@@ -129,7 +129,7 @@ ket : Interface di atas untuk melacak input yang diberikan oleh user, apakah ('L
 
 1️⃣1️⃣ Abstract Class
 
-https://github.com/daf2a/FP-OOP-5025211015/blob/67e736e49a5c603b2c858d32f870eb2f2d11bee0/FP-PBO-5025211015-2048/src/pkg2048/game/Game.java#L75-L102
+https://github.com/daf2a/FP-OOP-5025211015/blob/67e736e49a5c603b2c858d32f870eb2f2d11bee0/FP-PBO-5025211015-2048/src/pkg2048/game/Game.java#L75-L116
 
 scr : Game.java
 
@@ -138,9 +138,7 @@ ket : Abstract Class digunakan sebagai fungsi res() untuk mengoutputkan hasil sc
 
 1️⃣2️⃣ Generics
 
-https://github.com/daf2a/FP-OOP-5025211015/blob/67e736e49a5c603b2c858d32f870eb2f2d11bee0/FP-PBO-5025211015-2048/src/pkg2048/MainScreen.java#L25-L29
-
-https://github.com/daf2a/FP-OOP-5025211015/blob/67e736e49a5c603b2c858d32f870eb2f2d11bee0/FP-PBO-5025211015-2048/src/pkg2048/MainScreen.java#L61-L63
+https://github.com/daf2a/FP-OOP-5025211015/blob/67e736e49a5c603b2c858d32f870eb2f2d11bee0/FP-PBO-5025211015-2048/src/pkg2048/MainScreen.java#L25-L63
 
 scr : MainScreen.java
 
