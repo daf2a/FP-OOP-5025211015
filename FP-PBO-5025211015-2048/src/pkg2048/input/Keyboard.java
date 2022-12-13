@@ -31,14 +31,17 @@ public class Keyboard implements KeyListener{
         return !keys[key] && lastKeys[key];
     }
     
+    @Override
     public void keyTyped(KeyEvent e) {
      
     }
     
+    @Override
     public void keyPressed(KeyEvent e) {
         keys[e.getKeyCode()] = true;
     }
     
+    @Override
     public void keyReleased(KeyEvent e) {
         keys[e.getKeyCode()] = false;
     }

@@ -44,6 +44,7 @@ public class Game {
     public void update(){
         if(Keyboard.keyUp(KeyEvent.VK_R)){
             init();
+            System.out.println("Reset");
         }
         
         for(int i = 0; i < objects.size(); i++){
@@ -156,19 +157,23 @@ public class Game {
             if(Keyboard.keyDown(KeyEvent.VK_LEFT) || Keyboard.keyDown(KeyEvent.VK_A)){
                 hasMoved = true;
                 moving = true;
-                dir = 0;                     
+                dir = 0;    
+                System.out.println("Left");
             } else if(Keyboard.keyDown(KeyEvent.VK_RIGHT) || Keyboard.keyDown(KeyEvent.VK_D)){
                 hasMoved = true;
                 moving = true;
-                dir = 1;                     
+                dir = 1;    
+                System.out.println("Right");
             } else if(Keyboard.keyDown(KeyEvent.VK_UP) || Keyboard.keyDown(KeyEvent.VK_W)){
                 hasMoved = true;
                 moving = true;
-                dir = 2;                     
+                dir = 2;          
+                System.out.println("Up");
             } else if(Keyboard.keyDown(KeyEvent.VK_DOWN) || Keyboard.keyDown(KeyEvent.VK_S)){
                 hasMoved = true;
                 moving = true;
-                dir = 3;                     
+                dir = 3;       
+                System.out.println("Down");
             }
         }
         

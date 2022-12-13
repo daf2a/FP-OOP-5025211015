@@ -18,7 +18,7 @@ import static pkg2048.Main.highScore;
 
 public class MainScreen{
     public static void main (String[] args){
-        X obj = new X();
+        screen obj = new screen();
     }
 }
 
@@ -28,10 +28,10 @@ class Text<T> {
     public T getObject() { return this.prnt; }
 }
 
-class X extends JFrame {
+class screen extends JFrame {
     private ImageIcon bg;
     private JLabel myLabel;
-    public X(){
+    public screen(){
         JFrame f = new JFrame();
         
         try {
@@ -45,6 +45,7 @@ class X extends JFrame {
         
         JButton button = new JButton("Play");
         button.addActionListener((ActionEvent e) -> {
+            setVisible(false);
             Main m = new Main();
             m.frame.setResizable(false);
             m.frame.setTitle("2048");
@@ -59,8 +60,9 @@ class X extends JFrame {
         
         Text<Integer> highI = new Text<>(highScore);
         Text<String> highS = new Text<>("High Score : ");
-        
         //JLabel label = new JLabel ("" + highS + highS);
+        
+        
         JLabel label = new JLabel ("High Score : " + highScore);
         JLabel title = new JLabel ("        2048");
         
