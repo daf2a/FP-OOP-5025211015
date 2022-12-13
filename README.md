@@ -69,7 +69,7 @@ scr : WinBoard.java & LostBoard.java & Game.java
 ket : Overiding digunakan untuk fungsi paintComponent dengan kondisi yang berbeda antara Win dan Lose
 
 
-5️⃣ Encapsulation
+5️⃣ Encapsulation (❌)
 
 
 6️⃣ Inheritance
@@ -149,7 +149,7 @@ scr : MainScreen.java
 ket : Generics Class di sini digunakan untuk menjadikan highscore ataupun string menjadi object yang dapat digunakan dalam fungsi otuput
 
 
-1️⃣4️⃣ Collection 
+1️⃣4️⃣ Collection (❌)
 
 
 1️⃣5️⃣ Input Output 
