@@ -19,6 +19,9 @@ public class Main extends Canvas implements Runnable{
 
     public static final int WIDTH = 400, HEIGHT = 400;
     public static float scale = 2.0f;
+    public static int score = 0;
+    public static int highScore = 0;
+    public static boolean run = true;
     
     public JFrame frame;
     public Thread thread;
@@ -104,16 +107,7 @@ public class Main extends Canvas implements Runnable{
     }
     
     public static void main(String[] args) {
-        Main m = new Main();
-        m.frame.setResizable(false);
-        m.frame.setTitle("2048");
-        m.frame.add(m);
-        m.frame.pack();
-        m.frame.setVisible(true);
-        m.frame.setLocationRelativeTo(null);
-        m.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        m.frame.setAlwaysOnTop(true);
-        m.start();
+            Main m = new Main();
     }
     
     

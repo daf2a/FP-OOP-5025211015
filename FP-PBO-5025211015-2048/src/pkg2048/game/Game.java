@@ -9,9 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import pkg2048.Main;
+import static pkg2048.Main.score;
+import static pkg2048.Main.highScore;
 import pkg2048.gameobject.GameObject;
 import pkg2048.graphics.Renderer;
-
 import pkg2048.input.Keyboard;
 
 /**
@@ -50,7 +51,6 @@ public class Game {
         }
         
         checkForValueIncrease();
-        
         movingLogic();
     }
     
@@ -60,7 +60,8 @@ public class Game {
                 if(i == j) continue;
                 if(objects.get(i).x == objects.get(j).x && objects.get(i).y == objects.get(j).y && !objects.get(i).remove && !objects.get(j).remove){
                     objects.get(j).remove = true;
-                    objects.get(i).value *= 3;
+                    objects.get(i).value *= 2;
+                    score += objects.get(i).value;
                     objects.get(i).createSprite();
                 }
             }
@@ -70,8 +71,53 @@ public class Game {
         }
     }
     
+    abstract class res{
+        res(){System.out.println("===============");}
+         abstract void hs();
+    }
+
+    class win extends res{
+        @Override
+        void hs(){System.out.println("You Win!");}
+    }
+
+    class lose extends res{
+        @Override
+        void hs(){System.out.println("You Lose!");}
+    }    
+    
     private void spawn() {
-        if(objects.size() == 16) return;
+        if(objects.size() == 16) {
+            if(score>=2048){
+                //WinBoard.paintComponent();
+                //System.out.println("");
+                res yey = new win();
+                yey.hs();
+                //System.out.println("You Win!");
+                System.out.println("Your Score : " + score);
+                if(score > highScore) highScore = score;
+                System.out.println("Highest Score : " + highScore);
+                score = 0;
+                init();
+            } else{
+                //LoseBoard.paintComponent();
+//                System.out.println("");
+//                System.out.println("You Lose");
+                res yah = new lose();
+                yah.hs();
+                System.out.println("Your Score : " + score);
+                if(score > highScore) highScore = score;
+                System.out.println("Highest Score : " + highScore);
+                score = 0;
+                init();
+                return;
+            }
+        }
+        
+//        if(objects.size() == 16) {
+//            m.frame.setVisible(false);
+//            
+//        }
         
         boolean available = false;
         int x = 0, y = 0;

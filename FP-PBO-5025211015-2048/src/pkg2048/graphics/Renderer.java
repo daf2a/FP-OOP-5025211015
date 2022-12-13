@@ -14,7 +14,7 @@ public class Renderer {
     
     public static void renderBackground(){
         for(int y = 0; y < height; y++){
-            for(int x = 0; x < width; x++){
+            for(int x = 0; x < width ; x++){
                 pixels[x + y * width] = 0xff201f3c;
                 
                 if(x % 100 < 3 || x % 100 > 97 || y % 100 < 4 || y % 100 > 97){

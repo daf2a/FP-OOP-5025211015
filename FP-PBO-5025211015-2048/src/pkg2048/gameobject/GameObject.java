@@ -4,6 +4,7 @@ import java.util.Random;
 import pkg2048.Main;
 import pkg2048.game.Game;
 import pkg2048.graphics.Renderer;
+import static pkg2048.graphics.Renderer.pixels;
 import pkg2048.graphics.Sprite;
 
 /**
@@ -25,37 +26,57 @@ public class GameObject {
     public GameObject(double x, double y){
         this.x = x;
         this.y = y;
-        this.value = (rand.nextBoolean() ? 3 : 6);
+        this.value = (rand.nextBoolean() ? 2 : 4);
+        createSprite();
+        this.width = sprite.width;
+        this.height = sprite.height;
+    }
+    
+    public GameObject(double x, double y, double xp, double yp){
+        this.x = x;
+        this.y = y;
+        int yy = (int) (y + yp);
+        for(int i = 0; i < sprite.height; i++){
+            if(yy<0 || yy > 100) continue;
+            for(int j = 0; j < sprite.width; j++){
+                int xx = (int) (j + xp);
+                if(xx < 0 || xx > width) continue;
+                int col = sprite.pixels[j + i * sprite.width];
+                if(col == 0xffff00ff) continue;
+                else pixels[xx + yy * width] =  col;
+            }
+        }
+        this.value = (rand.nextBoolean() ? 2 : 4);
         createSprite();
         this.width = sprite.width;
         this.height = sprite.height;
     }
 
     public void createSprite() {
-        if(this.value == 3){
+        if(this.value == 2){
             this.sprite = new Sprite (100, 100, 0x8091af);
-        } else if(this.value == 6){
+        } else if(this.value == 4){
             this.sprite = new Sprite (100, 100, 0x4869ab);
-        } else if(this.value == 9){
+        } else if(this.value == 8){
             this.sprite = new Sprite (100, 100, 0x1788ac);
-        } else if(this.value == 27){
+        } else if(this.value == 16){
             this.sprite = new Sprite (100, 100, 0x2d6ae2);
-        } else if(this.value == 81){
+        } else if(this.value == 32){
             this.sprite = new Sprite (100, 100, 0x0dd044);
-        } else if(this.value == 243){
+        } else if(this.value == 64){
             this.sprite = new Sprite (100, 100, 0xf365ee);
-        } else if(this.value == 729){
+        } else if(this.value == 128){
             this.sprite = new Sprite (100, 100, 0xf3189b);
-        } else if(this.value == 2187){
+        } else if(this.value == 256){
             this.sprite = new Sprite (100, 100, 0xfca642);
-        } else if(this.value == 6561){
-            this.sprite = new Sprite (100, 100, 0x162331);
-        } else if(this.value == 19683){
-            this.sprite = new Sprite (100, 100, 0xeeff28);
-        } else if(this.value == 59049){
-            this.sprite = new Sprite (100, 100, 0x20202d);
-        } else if(this.value == 177147){
-            this.sprite = new Sprite (100, 100, 0x000000);
+        } else if(this.value == 512){
+            this.sprite = new Sprite (100, 100, 0x439A97);
+        } else if(this.value == 1024){
+            this.sprite = new Sprite (100, 100, 0x82CD47);
+        } else if(this.value == 2048){
+            this.sprite = new Sprite (100, 100, 0x80489C);
+        } else if(this.value == 4096){
+            this.sprite = new Sprite (100, 100, 0x6D67E4);
         }
     }
     
