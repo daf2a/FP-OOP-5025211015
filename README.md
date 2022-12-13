@@ -23,6 +23,9 @@ Final Result 🔽
 Link Demo Video : https://youtu.be/kk_79HPUnRg
 
 Reference       : https://its.id/m/ReferencePBO
+
+Keterangan      : di contributors terdapat 2 akun, akun tersebut merupakan akun saya yang satu lagi, dikarenakan saya memakai aplikasi sourcetree untuk push n pull dari laptop, saya baru tersadar jika akun github yang terhubung dengan aplikasi source tree merupakan akun saya yang kedua 🙏
+ 
  
 ➖➖➖➖➖➖➖➖➖➖➖
 
